@@ -16,6 +16,7 @@
     "vite-plugin-inspect": "^0.10.6"
   },
   "dependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "swiper": "^11.1.15"
   }
 }

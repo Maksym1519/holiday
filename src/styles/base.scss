@@ -7,8 +7,9 @@ body {
     line-height: 1.5;
     font-family: Sans;
     color: var(--white);
-    overflow: hidden;
+    overflow-x: hidden;
     background: var(--mainBg);
+    font-weight: 400;
   }
 
 .main {

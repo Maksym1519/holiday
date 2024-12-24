@@ -1,54 +1,125 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <div>
-          <svg class="header__logo">
-            <use xlink:href="./src/assets/images/sprite.svg#logo"></use>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div>
+        <svg class="header__logo">
+          <use xlink:href="./src/assets/images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+
+      <div class="burger">
+        <span id="top-line"></span>
+        <span id="mid-line"></span>
+        <span id="bottom-line"></span>
+      </div>
+
+      <nav class="header__nav">
+        <a class="header__nav-item" href="/">ГОЛОВНА</a>
+        <a class="header__nav-item" href="#">ПРО НАС</a>
+        <a class="header__nav-item" href="#">ЗАБРОНЮВАТИ</a>
+        <a class="header__nav-item" href="#">КОНТАКТИ</a>
+        <a class="header__nav-item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+        <div class="header__nav-item header__nav-item-languages">
+          <svg class="header__nav-item-icon">
+            <use xlink:href="./src/assets/images/sprite.svg#globe"></use>
           </svg>
-         </div>
-  
-         <nav class="header__nav">
-           <p class="header__nav-item">ГОЛОВНА</p>
-           <p class="header__nav-item">ПРО НАС</p>
-           <p class="header__nav-item">ЗАБРОНЮВАТИ</p>
-           <p class="header__nav-item">КОНТАКТИ</p>
-           <p class="header__nav-item">ОСОБИСТИЙ <br> КАБІНЕТ</p>
-           <div class="header__nav-item header__nav-item-languages">
-            <svg class="header__nav-item-icon">
-              <use xlink:href="./src/assets/images/sprite.svg#globe"></use>
-            </svg>
-            <p>UA</p>
-           </div>
-         </nav>
+          <p>UA</p>
+        </div>
+      </nav>
+
+      <nav class="mobile-menu">
+        <a class="mobile-menu__item" href="/">ГОЛОВНА</a>
+        <a class="mobile-menu__item" href="#">ПРО НАС</a>
+        <a class="mobile-menu__item" href="#">ЗАБРОНЮВАТИ</a>
+        <a class="mobile-menu__item" href="#">КОНТАКТИ</a>
+        <a class="mobile-menu__item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="hero">
+        <img class="hero__bg" src="./src/assets/images/hero.webp" alt="hero">
+
+        <div class="hero__description">
+          <h1 class="hero__description-title">HolidayTime</h1>
+          <p class="hero__description-text">Автентичний відпочинок серед українського колориту!</p>
+        </div>
       </div>
-      
-    </header>
 
-    <main class="main">
-      <div class="container">
-         <div class="hero">
-            <img class="hero__bg" src="./src/assets/images/hero.webp" alt="hero">
-
-            <div class="hero__description">
-               <h1 class="hero__description-title">HolidayTime</h1>
-               <p class="hero__description-text">Автентичний відпочинок серед українського колориту!</p>
+      <div class="slider swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/assets/images/image-3.webp" alt="slider-img">
             </div>
-         </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/images/hero.webp" alt="slider-img">
+            </div>
+          </div>
 
-         <div>
-          kdkdk
-         </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <svg>
+              <use xlink:href="./src/assets/images/sprite.svg#next"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="slider__info">
+          <p>
+            Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень.
+            Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.
+          </p>
+
+          <button class="slider__info-btn" type="button">
+            Переглянути
+            <img src="./src/assets/images/Arrow 1.svg" alt="arrow">
+          </button>
+        </div>
       </div>
-    </main>
-       
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+      <div class="rest">
+        <div class="rest__content">
+          <div class="rest__img">
+            <img src="./src/assets/images/rest.webp" alt="image">
+          </div>
+
+          <div class="rest__description">
+            Активний відпочинок у нетипових лоцаціях. Незаймана природа та місцевий колорит
+            подарують Вам незабутні враження.
+          </div>
+        </div>
+
+      </div>
+
+      <form class="form">
+        <div class="form__inputs">
+          <h2 class="form__title">Зворотній зв’язок</h2>
+          <label for="name">Ім’я</label>
+          <input type="text" name="name" placeholder="Введіть ім’я">
+
+          <label for="phone">Номер телефону</label>
+          <input type="text" name="phone" placeholder="Введіть номер телефону">
+        </div>
+
+        <button type="submit">Запросити виклик</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
