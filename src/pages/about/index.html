@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
+
 <body>
-    <h1 class="title">About</h1>
-    <a href="/">Go to Main</a>
+
+    <header class="header">
+        <div class="header__container">
+          <div>
+            <svg class="header__logo">
+              <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+            </svg>
+          </div>
+    
+          <div class="burger">
+            <span id="top-line"></span>
+            <span id="mid-line"></span>
+            <span id="bottom-line"></span>
+          </div>
+    
+          <nav class="header__nav">
+            <a class="header__nav-item" href="/">ГОЛОВНА</a>
+            <a class="header__nav-item" href="./src/pages/about/index.html">ПРО НАС</a>
+            <a class="header__nav-item" href="./src/pages/booking/index.html">ЗАБРОНЮВАТИ</a>
+            <a class="header__nav-item" href="./src/pages/contacts/index.html">КОНТАКТИ</a>
+            <a class="header__nav-item" href="./src/pages/cabinet/index.html">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+            <div class="header__nav-item header__nav-item-languages">
+              <svg class="header__nav-item-icon">
+                <use xlink:href="../../assets/images/sprite.svg#globe"></use>
+              </svg>
+              <p>UA</p>
+            </div>
+          </nav>
+    
+          <nav class="mobile-menu">
+            <a class="mobile-menu__item" href="/">ГОЛОВНА</a>
+            <a class="mobile-menu__item" href="#">ПРО НАС</a>
+            <a class="mobile-menu__item" href="#">ЗАБРОНЮВАТИ</a>
+            <a class="mobile-menu__item" href="#">КОНТАКТИ</a>
+            <a class="mobile-menu__item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="about main">
+        <div class="container">
+            <h1 class="about__title">Про нас </h1>
+
+            <div class="about__hero">
+               <img src="../../assets/images/about1.png" alt="img">
+               <img src="../../assets/images/about2.png" alt="img">
+               <img src="../../assets/images/about3.png" alt="img">
+            </div>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                    perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                    dolorem aut.</li>
+        
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                        perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                        dolorem aut.</li>
+        
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                            perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                            dolorem aut.</li>
+        
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                                perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                                dolorem aut.</li>
+        
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                                    perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                                    dolorem aut.</li>
+        
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                                        perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                                        dolorem aut.</li>
+        
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores nemo minima iste natus,
+                                            perspiciatis at corrupti harum! Cupiditate ea enim doloremque voluptatum! Cum adipisci facere dolores eius,
+                                            dolorem aut.</li>
+            </ul>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>© 2021 HolidayTime.  All rights reserved.</span>
+      </footer>
+   
+    <script type="module" src="../../main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,14 @@
+.footer {
+  display: table;
+  height: 90px;
+  background: var(--darkBlue);
+  padding: 10px 60px;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--textHovered);
+  }
+}

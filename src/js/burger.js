@@ -6,7 +6,7 @@ const mobileMenu = document.querySelector('.mobile-menu')
 
 let isOpen = false;
 
-burger.addEventListener("click", () => {
+burger && burger.addEventListener("click", () => {
   if (!isOpen) {
     // Открыть бургер
     burgerTopLine.style.transform = "translateY(10px) rotate(45deg)";
