@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailes</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="/">
+        <svg class="header__logo">
+          <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+
+      <div class="burger">
+        <span id="top-line"></span>
+        <span id="mid-line"></span>
+        <span id="bottom-line"></span>
+      </div>
+
+      <nav class="header__nav">
+        <a class="header__nav-item" href="/">ГОЛОВНА</a>
+        <a class="header__nav-item" href="/src/pages/about/index.html">ПРО НАС</a>
+        <a class="header__nav-item" id="nav-booking" href="/src/pages/booking/index.html">ЗАБРОНЮВАТИ</a>
+        <a class="header__nav-item" href="/src/pages/contacts/index.html">КОНТАКТИ</a>
+        <a class="header__nav-item" href="/src/pages/cabinet/index.html">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+        <div class="header__nav-item header__nav-item-languages">
+          <svg class="header__nav-item-icon">
+            <use xlink:href="../../assets/images/sprite.svg#globe"></use>
+          </svg>
+          <p>UA</p>
+        </div>
+      </nav>
+
+      <nav class="mobile-menu">
+        <a class="mobile-menu__item" href="/">ГОЛОВНА</a>
+        <a class="mobile-menu__item" href="#">ПРО НАС</a>
+        <a class="mobile-menu__item" href="#">ЗАБРОНЮВАТИ</a>
+        <a class="mobile-menu__item" href="#">КОНТАКТИ</a>
+        <a class="mobile-menu__item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="detailes-intro">
+      <div class="detailes-intro__container">
+        <h1>Бронювання будиночка в Карпатах </h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <a class="detailes-back" href="">
+        <svg>
+          <use xlink:href="../../assets/images/sprite.svg#arrow-back"></use>
+        </svg> Назад</a>
+
+      <div class="detailes-gallery">
+        <div class="detailes-gallery__item">
+          <img src="../../assets/images/gallery1.png" alt="img">
+        </div>
+
+        <div class="detailes-gallery__item detailes-gallery__item_text">
+          <p>Затишні дерев’яні будиночки, які заховались
+            на окраїні лісу, зустрічатимуть Вас чудовим
+            краєвидом на ранкові полонини.
+          </p>
+
+          <p>
+            Ви можете обрати кількість кімнат та місце, яке
+            буде ідеальним для Вас. Територія, на якій базуються будиночки, підійде як і для великих компаній, яким
+            потрібно бути поряд у декількох будинках, так і
+            для пар, які хочуть бути на одинці.
+          </p>
+        </div>
+
+        <div class="detailes-gallery__item">
+          <img src="../../assets/images/gallery2.png" alt="image">
+        </div>
+
+        <div class="detailes-gallery__item">
+          <img src="../../assets/images/gallery3.png" alt="image">
+        </div>
+
+        <div class="detailes-gallery__item">
+          <img src="../../assets/images/gallery4.png" alt="image">
+        </div>
+      </div>
+
+      <div class="places">
+        <h2 class="places__title">Наявність місць</h2>
+
+        <div class="places__body">
+          <h3 class="places__body-subtitle">Коли б Ви хотіли зупинись в помешканні Полонини Карпат?</h3>
+
+          <div class="places__select">
+            <div class="places__select-item">
+              <label for="arrive">Дата заїзду</label>
+              <div class="places__select-input">
+                <svg class="places__select-calendar">
+                  <use xlink:href="../../assets/images/sprite.svg#calendar"></use>
+                </svg>
+
+                <span class="places__select-value" id="arrived">Дата заїзду</span>
+
+                <input type="date" name="arrive" id="arrived-input">
+
+                <svg class="places__select-arrow">
+                  <use xlink:href="../../assets/images/sprite.svg#input-arrow"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="places__select-item">
+              <label for="departure">Дата виїзду</label>
+              <div class="places__select-input">
+                <svg class="places__select-calendar">
+                  <use xlink:href="../../assets/images/sprite.svg#calendar"></use>
+                </svg>
+
+
+                <span class="places__select-value" id="departure">Дата виїзду</span>
+
+                <input type="date" name="departure" id="departure-input">
+
+                <svg class="places__select-arrow">
+                  <use xlink:href="../../assets/images/sprite.svg#input-arrow"></use>
+                </svg>
+              </div>
+            </div>
+
+            <button class="places__select-btn" type="button">Перевірити наявність вільних місць</button>
+          </div>
+
+          <div class="places__counters">
+             <div class="places__counters-item">
+                <label for="rooms">Номери</label>
+                <input type="number" name="rooms" placeholder="0">
+             </div>
+
+             <div class="places__counters-item">
+              <label for="adults">Дорослі</label>
+              <input type="number" name="adults" placeholder="0">
+           </div>
+
+           <div class="places__counters-item">
+            <label for="children">Діти</label>
+            <input type="number" name="children" placeholder="0">
+         </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="summary">
+        <thead>
+          <tr class="summary__header">
+            <th>Вміщує</th>
+            <th>Тип розміщення</th>
+            <th>Ціна</th>
+          </tr>
+        </thead>
+
+        <tbody> 
+          <tr class="summary__row">
+          <td class="summary__cell summary__cell_person">
+            <svg>
+              <use xlink:href="../../assets/images/sprite.svg#person"></use>
+            </svg>
+
+            <svg>
+              <use xlink:href="../../assets/images/sprite.svg#person"></use>
+            </svg>
+           </td>
+
+           <td class="summary__cell summary__cell_type">
+            <span>Двомісний номер</span>
+
+            <div class="summary__cell-beds">
+              <span>1 широке двоспальне ліжко</span>
+              <svg>
+                <use xlink:href="../../assets/images/sprite.svg#bed"></use>
+              </svg>
+            </div>
+           </td>
+
+           <td class="summary__cell summary__cell_price">
+            <button class="summary__cell-btn">Показати ціни</button>
+           </td>
+         </tr>
+        </tbody>
+      </table>
+
+      <div class="lift-up">
+         <svg>
+          <use xlink:href="../../assets/images/sprite.svg#arrow-up"></use>
+        </svg>
+      </div>
+    </div>
+    
+ </main>
+
+  <footer class="footer">
+    <span>© 2021 HolidayTime. All rights reserved.</span>
+  </footer>
+
+  <script type="module" src="../../main.js"></script>
+</body>
+
+</html>

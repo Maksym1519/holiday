@@ -1,21 +1,23 @@
 import js from '@eslint/js';
 
 export default [
-  js.configs.recommended,
+  js.configs.recommended, // Базовая конфигурация для JavaScript
+ 
   {
-    files: ['**/*.js', '**/*.jsx'], // Настройка для JavaScript/JSX файлов
+    files: ['**/*.js', '**/*.jsx', '**/*.vue'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        window: 'readonly', // Глобальные переменные браузера
+        window: 'readonly',
         document: 'readonly',
         console: 'readonly',
+        process: 'readonly', 
       },
     },
     rules: {
-      'no-console': 'warn', // Предупреждать при использовании console
-      'no-undef': 'error',  // Ошибка, если используются неопределенные переменные
+      'no-console': 'warn', // Выдавать предупреждение при использовании console
+      "no-undef": ["error", { "typeof": true }]
     },
   },
 ];

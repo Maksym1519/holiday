@@ -134,9 +134,12 @@
 
   &__img {
     display: inline-block;
+    height: 100%;
 
     img {
       object-fit: cover;
+      width: 100%;
+      min-height: 100%;
     }
   }
 
@@ -220,5 +223,65 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .slider {
+    margin: 0 0 40px;
+
+    &__info {
+      height: auto;
+      padding: 40px 20px 40px;
+    }
+
+    .swiper-button-next {
+      top: 40%;
+    }
+  }
+  .rest {
+    padding: 16px;
+
+    &__content {
+      grid-template-columns: 1fr;
+      row-gap: 16px;
+     }
+  }
+}
+
+@media (max-width: 576px) {
+ .hero {
+  &__description-title {
+    font-size: 48px;
+  }
+
+  &__description-text {
+    font-size: 22px;
+  }
+ }
+
+ .slider {
+  .swiper-slide {
+    height: 800px;
+  }
+ }
+
+ .rest {
+  padding: 0;
+ }
+
+ .form {
+  &__inputs {
+    padding: 16px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 28px;
+
+    &:active {
+      font-size: 30px;
+    }
+  }
+ }
 }

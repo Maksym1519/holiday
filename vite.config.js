@@ -3,19 +3,19 @@ import eslint from 'vite-plugin-eslint';
 import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'url';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
+const mode = process.env.VITE_APP_MODE || "development";
 
 
 
 export default defineConfig({
-  base: './', // Использование относительных путей
-
+  base: mode === 'production' ? '/holiday' : './',
   esbuild: {
     jsxFactory: "create",
   },
-
+ 
   build: {
     rollupOptions:{
       input: {

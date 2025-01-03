@@ -12,3 +12,12 @@
     color: var(--textHovered);
   }
 }
+
+@media(max-width: 768px) {
+  .footer {
+    padding: 10px 24px;
+    span {
+      font-size: 22px;
+    }
+  }
+}
