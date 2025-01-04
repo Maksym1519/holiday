@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Contacts</title>
+  <script type="module" crossorigin src="../../../assets/main-p3hzdmGT.js"></script>
+  <link rel="stylesheet" crossorigin href="../../../assets/main-C4CmEkpL.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/holiday">
+                <svg class="header__logo">
+                    <use xlink:href="../../../assets/sprite-CQMPSvFd.svg#logo"></use>
+                </svg>
+            </a>
+
+            <div class="burger">
+                <span id="top-line"></span>
+                <span id="mid-line"></span>
+                <span id="bottom-line"></span>
+            </div>
+
+            <nav class="header__nav">
+                <a class="header__nav-item" href="/holiday">ГОЛОВНА</a>
+                <a class="header__nav-item" href="src/pages/about/index.html">ПРО НАС</a>
+                <a class="header__nav-item" id="nav-booking" href="src/pages/booking/index.html">ЗАБРОНЮВАТИ</a>
+                <a class="header__nav-item" href="src/pages/contacts/index.html">КОНТАКТИ</a>
+                <a class="header__nav-item" href="src/pages/cabinet/index.html">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+                <div class="header__nav-item header__nav-item-languages">
+                    <svg class="header__nav-item-icon">
+                        <use xlink:href="../../../assets/sprite-CQMPSvFd.svg#globe"></use>
+                    </svg>
+                    <p>UA</p>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <a class="mobile-menu__item" href="/">ГОЛОВНА</a>
+                <a class="mobile-menu__item" href="#">ПРО НАС</a>
+                <a class="mobile-menu__item" href="#">ЗАБРОНЮВАТИ</a>
+                <a class="mobile-menu__item" href="#">КОНТАКТИ</a>
+                <a class="mobile-menu__item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="contacts-intro">
+            <div class="contacts-intro__container">
+                <h1>Контакти</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contacts">
+                <div class="contacts__item">
+                    <span class="contacts__item-text contacts__item-text_title">Телефон</span>
+                    <span class="contacts__item-text contacts__item-text_bottom">+38(097)119-89-83</span>
+                </div>
+
+                <div class="contacts__item">
+                    <span class="contacts__item-text contacts__item-text_title">Графік роботи</span>
+                    <span class="contacts__item-text contacts__item-text_bottom">
+                        пн-пт 08:00-22:00 <br>
+                        сб 09:00-21:00 <br>
+                        вс 10:00-20:00</span>
+                </div>
+
+                <div class="contacts__item">
+                    <span class="contacts__item-text contacts__item-text_title">Ел. пошта</span>
+                    <span class="contacts__item-text contacts__item-text_bottom">hello@gmail.com</span>
+                </div>
+
+                <div class="contacts__item">
+                    <span class="contacts__item-text contacts__item-text_title">Адреса офісу</span>
+                    <span class="contacts__item-text contacts__item-text_bottom">Одеса, вул. Ак.Фiлатова, 2</span>
+                </div>
+
+                <div class="contacts__item contacts__item_map" id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>© 2021 HolidayTime. All rights reserved.</span>
+    </footer>
+
+</body>
+
+</html>
