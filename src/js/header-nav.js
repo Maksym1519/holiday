@@ -8,9 +8,11 @@ const navBooking = document.getElementById("nav-booking");
 
 document.querySelectorAll(".header__nav-item").forEach((link, index) => {
   const href = link.getAttribute("href");
-  const normalizedHref = href ? href.replace(/^\./, "") : null;
+  const normalizedHref = href ? new URL(href, window.location.origin).pathname : null;
+  console.log(location)
+  console.log(normalizedHref)
 
-  if (normalizedHref && location && normalizedHref === location) {
+  if (normalizedHref && location.includes(normalizedHref)) {
     link.classList.add("active");
    }
    if (location.includes('detail')) {

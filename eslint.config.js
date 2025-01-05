@@ -13,6 +13,8 @@ export default [
         document: 'readonly',
         console: 'readonly',
         process: 'readonly', 
+        L: 'readonly',
+        URL: 'readonly'
       },
     },
     rules: {

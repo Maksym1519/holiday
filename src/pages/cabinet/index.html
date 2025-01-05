@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal cabinet</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/holiday">
+                <svg class="header__logo">
+                    <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <div class="burger">
+                <span id="top-line"></span>
+                <span id="mid-line"></span>
+                <span id="bottom-line"></span>
+            </div>
+
+            <nav class="header__nav">
+                <a class="header__nav-item" href="/holiday">ГОЛОВНА</a>
+                <a class="header__nav-item" href="../about/index.html">ПРО НАС</a>
+                <a class="header__nav-item" id="nav-booking" href="../booking/index.html">ЗАБРОНЮВАТИ</a>
+                <a class="header__nav-item" href="../contacts/index.html">КОНТАКТИ</a>
+                <a class="header__nav-item" href="../cabinet/index.html">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+                <div class="header__nav-item header__nav-item-languages">
+                    <svg class="header__nav-item-icon">
+                        <use xlink:href="../../assets/images/sprite.svg#globe"></use>
+                    </svg>
+                    <p>UA</p>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <a class="mobile-menu__item" href="/">ГОЛОВНА</a>
+                <a class="mobile-menu__item" href="#">ПРО НАС</a>
+                <a class="mobile-menu__item" href="#">ЗАБРОНЮВАТИ</a>
+                <a class="mobile-menu__item" href="#">КОНТАКТИ</a>
+                <a class="mobile-menu__item" href="#">ОСОБИСТИЙ <br> КАБІНЕТ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="personal-intro">
+        <div class="personal-intro__container">
+            <h1>Особистий кабінет</h1>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="personal">
+                <div class="personal__body">
+                    <div class="personal__avatar">
+                        <div class="personal__avatar-img">
+                            <svg>
+                                <use xlink:href="../../assets/images/sprite.svg#avatar"></use>
+                            </svg>
+                        </div>
+
+                        <button class="personal__avatar-btn personal__avatar-btn_change">Змінити аватар</button>
+
+                        <button class="personal__avatar-btn personal__avatar-btn_settings">Налаштування</button>
+                    </div>
+
+                    <div class="personal__info">
+                        <div class="personal__info-item">
+                            <span class="personal__info-item-title">Коростельов Максим Сергiйович</span>
+                        </div>
+
+                        <div class="personal__info-item">
+                            <span class="personal__info-item-title">Стать:</span>
+                            <span class="personal__info-item-text">чоловіча</span>
+                        </div>
+
+                        <div class="personal__info-item">
+                            <span class="personal__info-item-title">Дата народження:</span>
+                            <span class="personal__info-item-text">10. 02. 1998</span>
+                        </div>
+
+                        <div class="personal__info-item">
+                            <span class="personal__info-item-title">Мобільний телефон:</span>
+                            <span class="personal__info-item-text">+38(097)346-72-50</span>
+                        </div>
+
+                        <div class="personal__info-item">
+                            <span class="personal__info-item-title">Ел. пошта:</span>
+                            <span class="personal__info-item-text">petrov@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="personal-quit">Вийти</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>© 2021 HolidayTime. All rights reserved.</span>
+    </footer>
+
+    <script type="module" src="../../main.js"></script>
+</body>
+
+</html>
