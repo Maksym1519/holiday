@@ -108,6 +108,10 @@
     &__nav {
       display: none;
     }
+
+    &__nav-item {
+      border: none;
+    }
   }
   .mobile-menu {
     z-index: 100;
@@ -123,6 +127,7 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 20px;
+      border: none;
     }
 
     &__item:active {
@@ -140,6 +145,11 @@
   .header {
     &__container {
       padding: 10px 24px;
+    }
+
+    &__logo {
+      width: 120px;
+      height: 50px;
     }
   }
 }

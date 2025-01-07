@@ -316,6 +316,7 @@
 }
 
 .lift-up {
+  z-index: 1000;
   position: fixed;
   bottom: 200px;
   right: 10%;
@@ -376,5 +377,10 @@
     grid-row-start: 1;
     grid-row-end: 2;
    } 
+  }
+
+  .lift-up {
+    width: 80px;
+    height: 80px;
   }
 }
